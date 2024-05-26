@@ -137,8 +137,5 @@ elif page == "Send Request":
 
     # Display a button to submit the request
     if st.button("Submit Request"):
-        st.write("Request details:", request_details)
         if uploaded_file is not None:
-            st.write("Filename:", uploaded_file.name)
-            st.write("File type:", uploaded_file.type)
-            st.write("File size:", uploaded_file.size, "bytes")
+            st.write("Request sent!")
